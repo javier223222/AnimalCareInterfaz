@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="caja2" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalcareproducts.AtencionAlClienteController">
+   <children>
+      <AnchorPane prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: db0714;">
+         <children>
+            <Label layoutX="505.0" layoutY="12.0" prefHeight="47.0" prefWidth="400.0" text="Atencion al cliente" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="1097.0" layoutY="27.0" mnemonicParsing="false" onAction="#regresar" style="-fx-background-color: fff;" text="Regresar">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <ImageView fitHeight="83.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true" y="-10.0">
+         <image>
+            <Image url="@../../../Imagenes/animalCareLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="407.0" layoutY="66.0" prefHeight="36.0" prefWidth="328.0" text="-Problema con el envio" textFill="#787878">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="90.0" prefHeight="21.0" prefWidth="153.0" text="Numero de recibo" textFill="#787878">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idRecibo" layoutX="433.0" layoutY="111.0" prefHeight="31.0" prefWidth="175.0" />
+      <TextArea fx:id="caja1" layoutX="719.0" layoutY="92.0" prefHeight="100.0" prefWidth="180.0" promptText="Comentarios Adicionales">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="solicitar1" layoutX="719.0" layoutY="201.0" mnemonicParsing="false" onAction="#solicitraone" prefHeight="46.0" prefWidth="191.0" style="-fx-background-color: db0714;" text="Solicitar reenbolso" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="65.0" layoutY="253.0" prefHeight="0.0" prefWidth="1136.0" />
+      <Label layoutX="421.0" layoutY="253.0" text="-Producto  equivocado" textFill="#787878">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="281.0" prefHeight="21.0" prefWidth="153.0" text="Numero de recibo" textFill="#787878">
+         <font>
+            <Font name="Roboto" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numeroRecibo2" layoutX="446.0" layoutY="302.0" prefHeight="31.0" prefWidth="175.0" />
+      <TextArea fx:id="caja2g" layoutX="724.0" layoutY="292.0" prefHeight="100.0" prefWidth="180.0" promptText="Comentarios Adicionales">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="solicitar2" layoutX="724.0" layoutY="404.0" mnemonicParsing="false" onAction="#solicitartwo" prefHeight="46.0" prefWidth="191.0" style="-fx-background-color: db0714;" text="Solicitar Reposicion" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="57.0" layoutY="459.0" prefWidth="1138.0" />
+      <Label layoutX="414.0" layoutY="465.0" text="-Producto defectuoso" textFill="#787878">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="487.0" prefHeight="21.0" prefWidth="153.0" text="Numero de recibo" textFill="#787878">
+         <font>
+            <Font name="Roboto" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numerorecibo3" layoutX="451.0" layoutY="514.0" prefHeight="31.0" prefWidth="175.0" />
+      <TextArea fx:id="caja3" layoutX="735.0" layoutY="504.0" prefHeight="100.0" prefWidth="180.0" promptText="Comentarios Adicionales">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="codigoDescuento" layoutX="735.0" layoutY="613.0" mnemonicParsing="false" onAction="#generarCodigo" prefHeight="46.0" prefWidth="191.0" style="-fx-background-color: db0714;" text="Generar codigo de descuento" textFill="WHITE" />
+      <Button fx:id="buscar1" layoutX="433.0" layoutY="156.0" mnemonicParsing="false" onAction="#buscar1" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: db0714;" text="Buscar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buscar2" layoutX="438.0" layoutY="342.0" mnemonicParsing="false" onAction="#buscar2" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: db0714;" text="Buscar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buscar3" layoutX="234.0" layoutY="512.0" mnemonicParsing="false" onAction="#buscarthree" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: db0714;" text="Buscar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

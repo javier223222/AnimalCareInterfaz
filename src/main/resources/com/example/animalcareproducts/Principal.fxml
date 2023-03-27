@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1290.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalcareproducts.HelloController">
+   <children>
+      <AnchorPane layoutX="8.0" prefHeight="138.0" prefWidth="1282.0" style="-fx-background-color: db0714;">
+         <children>
+            <ImageView fitHeight="296.0" fitWidth="275.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/animalCareLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="332.0" fitWidth="626.0" layoutX="334.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/home-page-acp-penbiotic.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="334.0" layoutY="288.0" text="Descubre como cada uno de nuestros l" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="318.0" text="productos puede ayudarte a" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="360.0" text="mejorar los parámetros de producción." textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="80.0" layoutY="547.0" mnemonicParsing="false" onAction="#abrirPrincipal" prefHeight="62.0" prefWidth="225.0" style="-fx-background-color: db0714;" text="Administrador" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="990.0" layoutY="547.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="225.0" style="-fx-background-color: db0714;" text="Cliente" textFill="WHITE" onAction="#abiriCliente">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

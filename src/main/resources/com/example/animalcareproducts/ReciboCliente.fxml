@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="nombreEnvio" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalcareproducts.ReciboClienteController">
+   <children>
+      <AnchorPane layoutY="-10.0" prefHeight="48.0" prefWidth="1280.0" style="-fx-background-color: db0714;">
+         <children>
+            <Button layoutX="1108.0" layoutY="13.0" mnemonicParsing="false" onAction="#regresar" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: fff;" text="Regresar" />
+         </children></AnchorPane>
+      <ImageView fitHeight="48.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/animalCareLogo.png" />
+         </image></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="354.0" layoutX="261.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="706.0" />
+      <Label layoutX="380.0" layoutY="58.0" prefHeight="40.0" prefWidth="365.0" text="Recibo de la compra" textFill="#787878">
+         <font>
+            <Font name="Roboto" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="754.0" layoutY="58.0" prefHeight="40.0" prefWidth="365.0" textFill="#787878">
+         <font>
+            <Font name="Roboto" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="60.0" prefHeight="114.0" prefWidth="156.0" text="Compra realizada" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font></Label>
+      <Label fx:id="compraRealizada1" layoutX="401.0" layoutY="98.0" prefHeight="30.0" prefWidth="193.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="79.0" prefHeight="114.0" prefWidth="166.0" text="Recibo con numero" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="idRecibo" layoutX="416.0" layoutY="125.0" prefHeight="26.0" prefWidth="222.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="98.0" prefHeight="114.0" prefWidth="136.0" text="Total del pedido" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPedido" layoutX="397.0" layoutY="148.0" prefHeight="30.0" prefWidth="152.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="261.0" layoutY="229.0" prefWidth="705.9999961107969" />
+      <Label layoutX="380.0" layoutY="174.0" prefHeight="50.0" prefWidth="214.0" text="Compra realizada:" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="compraRealizada2" layoutX="586.0" layoutY="174.0" prefHeight="50.0" prefWidth="214.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="239.0" prefHeight="23.0" prefWidth="553.0" text="Productos comprados" textFill="#7f7f7f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="266.0" prefHeight="11.0" prefWidth="165.0" textFill="#7f7f7f">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="292.0" prefHeight="26.0" prefWidth="156.0" textFill="#7f7f7f">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="318.0" prefHeight="26.0" prefWidth="166.0" textFill="#7f7f7f">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="810.0" layoutY="292.0" prefHeight="11.0" prefWidth="165.0" textFill="#7f7f7f">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="810.0" layoutY="318.0" prefHeight="26.0" prefWidth="156.0" textFill="#7f7f7f">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="261.0" layoutY="404.0" prefWidth="705.9999961107969" />
+      <Label layoutX="266.0" layoutY="410.0" text="Direccion de envio" textFill="#7f7f7f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nombre" layoutX="266.0" layoutY="430.0" prefHeight="20.0" prefWidth="145.0" textFill="#7f7f7f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="direccion2" layoutX="266.0" layoutY="450.0" prefHeight="20.0" prefWidth="146.0" textFill="#7f7f7f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ciudad" layoutX="266.0" layoutY="470.0" prefHeight="3.0" prefWidth="115.0" textFill="#7f7f7f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="region" layoutX="266.0" layoutY="490.0" prefHeight="20.0" prefWidth="115.0" textFill="#7f7f7f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="direccion3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="145.0" layoutX="261.0" layoutY="550.0" stroke="BLACK" strokeType="INSIDE" width="706.0" />
+      <Separator layoutX="258.0" layoutY="590.0" prefWidth="708.9999961555004" />
+      <Label layoutX="501.0" layoutY="550.0" text="Informacion de pago" textFill="#7f7f7f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="593.0" text="Metodo de pago" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dsatosBancarios" layoutX="258.0" layoutY="605.0" prefHeight="26.0" prefWidth="136.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="631.0" text="Direccion de facturacion" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nombrefactura" layoutX="261.0" layoutY="649.0" prefHeight="20.0" prefWidth="152.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="direccionfactura" layoutX="263.0" layoutY="667.0" prefHeight="18.0" prefWidth="146.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="667.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="763.0" layoutY="593.0" text="Total productos:" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalEnProductos" layoutX="865.0" layoutY="593.0" prefHeight="18.0" prefWidth="102.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="763.0" layoutY="613.0" text="Envio:" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalEnvio" layoutX="876.0" layoutY="613.0" prefHeight="20.0" prefWidth="78.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="763.0" layoutY="631.0" text="Subtotal:" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="563.0" layoutY="658.0" text=" Total (IVA incluido, en caso de ser aplicable): " textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="subtotal" layoutX="876.0" layoutY="631.0" prefHeight="18.0" prefWidth="87.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="865.0" layoutY="660.0" prefHeight="18.0" prefWidth="70.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totaliva" layoutX="849.0" layoutY="658.0" prefHeight="20.0" prefWidth="115.0" textFill="#7f7f7f">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="articulos" layoutX="269.0" layoutY="262.0" prefHeight="114.0" prefWidth="687.0">
+         <columns>
+            <TableColumn fx:id="nombreProducto" prefWidth="90.39999008178711" text="nombre " />
+            <TableColumn fx:id="idproducto" prefWidth="91.20001220703125" text="idproducto" />
+            <TableColumn fx:id="presentacion" minWidth="0.0" prefWidth="202.3999786376953" text="presentacion" />
+            <TableColumn fx:id="tipo" prefWidth="142.4000244140625" text="tipo" />
+            <TableColumn fx:id="precio" prefWidth="75.0" text="Precio" />
+            <TableColumn fx:id="cantidad" prefWidth="96.0" text="Cantidad" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

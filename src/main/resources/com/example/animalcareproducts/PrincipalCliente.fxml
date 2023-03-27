@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalcareproducts.PrincipalClienteController">
+   <children>
+      <AnchorPane prefHeight="81.0" prefWidth="1280.0" style="-fx-background-color: db0714;">
+         <children>
+            <Label layoutX="491.0" layoutY="17.0" prefHeight="47.0" prefWidth="400.0" text="Menu principal" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="1127.0" layoutY="26.0" mnemonicParsing="false" onAction="#atencionAcliente" prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: ffff;" text="Atencion a cliente" />
+            <Button layoutX="961.0" layoutY="26.0" mnemonicParsing="false" onAction="#salir" prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: ffff;" text="salir" />
+            <ImageView fitHeight="62.0" fitWidth="62.0" layoutX="841.0" layoutY="14.0" onMouseClicked="#comprar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="81.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/animalCareLogo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabla" layoutX="9.0" layoutY="201.0" onMouseClicked="#seleccionar" prefHeight="468.0" prefWidth="1259.0" style="-fx-border-color: db0714;">
+         <columns>
+            <TableColumn fx:id="idproducto" prefWidth="196.79998779296875" text="Id del producto" />
+            <TableColumn fx:id="nombreProducto" minWidth="0.0" prefWidth="145.60003662109375" text="Nombre del producto" />
+            <TableColumn fx:id="presentacion" prefWidth="247.99996948242188" text="Presentacion" />
+            <TableColumn fx:id="tipo" prefWidth="184.800048828125" text="Formula" />
+            <TableColumn fx:id="precio" prefWidth="161.5999755859375" text="Precio" />
+            <TableColumn fx:id="cantidad" prefWidth="97.199951171875" text="Cantidad" />
+            <TableColumn fx:id="verificacion" prefWidth="222.800048828125" text="Verificacion sagarpa" />
+         </columns>
+      </TableView>
+      <Button fx:id="agregarAlcarrito" layoutX="1117.0" layoutY="152.0" mnemonicParsing="false" onAction="#agregarAlcarrito" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: db0714;" text="Agregar Al Carrito" />
+   </children>
+</AnchorPane>
